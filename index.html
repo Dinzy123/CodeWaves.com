@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01af3ad61e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Pictures//MyLogo.png"  class="logo" height="70" width="100">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CodeWave Designer</p>
+                <h1>Hi, I'm <span>Sanele</span><br> Mkhabela From Impendle</h1>
+            </div>
+        </div>
+    </div>
+   <!-----------About------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Pictures//AboutPic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm currently a second-year student at Mangosuthu University Of Technology, 
+                        pursuing a degree in Software Development. My passion for coding has been a 
+                        lifelong interest, and I'm particularly drawn to unraveling the intricacies 
+                        of user interfaces and graphics presented on webpages. Coding has been a dream 
+                        of mine since my childhood, and I have been actively pursuing it.
+
+                        My primary area of expertise lies in web development, where I specialize in creating
+                        websites using HTML, CSS, and JavaScript. In addition to my web development skills, 
+                        I also possess a strong foundation in programming languages such as Java and C#.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>CodeWave</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>Design training at w3Schools and Cousera</li>
+                            <li><span>2022 - 2022</span><br>Creates my first Portfolio website</li>
+                            <li><span>2022</span><br>Design My first login page using Java and C#</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>Entered At MUT to do Information Technology</li>
+                            <li><span>2023</span><br>Done DataBase Using SQL Serve and Derby</li>
+                            <li><span>2023</span><br>Developing Angular Android App with Node.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------services------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I'm developing websites using a moden HTML5 and CSS, also make buttons work
+                        using JavaScript. I create good and well functioning websites that you can
+                        use for your company to generate income.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>I'm designing User Interface (UI) which is a crucial aspect of creating digital products, such as websites, mobile apps, software applications, and even hardware devices with digital interfaces. UI design focuses on crafting the visual elements and user interactions that make these products user-friendly, aesthetically pleasing, and functional.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I'm a developer specializing in App Design i'm creative and technically skilled professionalist who combines expertise in software development with a deep understanding of user interface (UI) and user experience (UX) design principles. I excel in translating user needs and business requirements into visually appealing, user-friendly, and functional mobile or web applications.
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------Portfolio------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Pictures//Calculator.jpg" height="300px">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>The app helps you to calculate what ever you want to
+                            calculate and i'm still working on it, this will be 
+                            a great app for android phone and also for store manangers.
+                            It will be available soon on Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Pictures//VarsityDrive.png" height="300px">
+                    <div class="layer">
+                        <h3>Varsity Drive</h3>
+                        <p>Varsity Drive is an App that me and team members are still
+                            working on and it's basically for varsity students who will
+                            be using it for save travel and better ride experience with
+                            student discounts.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Pictures//other.jpg" height="300px">
+                    <div class="layer">
+                        <h3>Other Apps</h3>
+                        <p>I'm still working on other projects that will also be
+                            posted here on my portfolio website and i'm still 
+                            improving my coding skills by engaging into Hackathons
+                            and taking short courses on internet.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!-----------------Contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>saneledinzy123@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+27 723 6577</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/sanele-mkhabela-3b1967248"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="Doc//My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Sanele. Made with by <i class="fas fa-heart"></i> CodeWave</p>
+    </div>
+</div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemen = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIdntLa7V2PJ-Dn6TDGzQswMeUG8ba7GdEZbycDIfvYlc9y0BLF9wG77jeAwFxUtfd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
